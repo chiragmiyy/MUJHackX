@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM System with AI Recommendations</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="panel header">
+            <div class="header-logo">
+                <a href="https://bikesetu.com/"><img src="https://bikesetu.com/assets/img/logo_512.png" class="logo"></a>
+            </div>
+            <div class="pan-items border">
+                <ul>
+                    <li>
+                        <a href="/Users/chirag/Documents/MUJHackX/index.html">Scooter Lifecycle Tracker</a>
+                    </li>
+                    <li>
+                        <a href="#">CRM System with AI Recommendations</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h1>CRM System with AI Recommendations</h1>
+
+            <div class="tabs">
+                <button class="tablink" onclick="openTab(event, 'Customers')">Customers</button>
+                <button class="tablink" onclick="openTab(event, 'Sales')">Sales</button>
+                <button class="tablink" onclick="openTab(event, 'Support')">Support</button>
+                <button class="tablink" onclick="openTab(event, 'Recommendations')">Recommendations</button>
+            </div>
+
+            <div id="Customers" class="tabcontent">
+                <h2>Customer Management</h2>
+                <form id="customer-form">
+                    <input type="text" id="customer-name" placeholder="Customer Name" required>
+                    <input type="email" id="customer-email" placeholder="Customer Email" required>
+                    <button type="button" onclick="addCustomer()">Add Customer</button>
+                </form>
+                <ul id="customer-list"></ul>
+            </div>
+
+            <div id="Sales" class="tabcontent">
+                <h2>Sales Management</h2>
+                <form id="sale-form">
+                    <input type="text" id="sale-customer" placeholder="Customer Name" required>
+                    <input type="text" id="sale-amount" placeholder="Sale Amount" required>
+                    <button type="button" onclick="addSale()">Record Sale</button>
+                </form>
+                <ul id="sale-list"></ul>
+            </div>
+
+            <div id="Support" class="tabcontent">
+                <h2>Support Tickets</h2>
+                <form id="support-form">
+                    <input type="text" id="support-customer" placeholder="Customer Name" required>
+                    <textarea id="support-issue" placeholder="Issue Description" required></textarea>
+                    <button type="button" onclick="addSupport()">Submit Ticket</button>
+                </form>
+                <ul id="support-list"></ul>
+            </div>
+
+            <div id="Recommendations" class="tabcontent">
+                <h2>Personalized Recommendations</h2>
+                <form id="recommendation-form">
+                    <input type="text" id="recommendation-customer" placeholder="Customer Name" required>
+                    <button type="button" onclick="getRecommendations()">Get Recommendations</button>
+                </form>
+                <ul id="recommendation-list"></ul>
+            </div>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

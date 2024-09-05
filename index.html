@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scooter Lifecycle Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <div class="panel header">
+            <div class="header-logo">
+                <a href="https://bikesetu.com/"><img src="https://bikesetu.com/assets/img/logo_512.png" class="logo"></a>
+            </div>
+            <div class="pan-items border">
+                <ul>
+                    <li>
+                        <a href="#">Scooter Lifecycle Tracker</a>
+                    </li>
+                    <li>
+                        <a href="/Users/chirag/Documents/MUJHackX/CRM/index.html">CRM System with AI Recommendations</a>
+                    </li>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <h1>Scooter Lifecycle Tracker</h1>
+            <div id="scooter-tracking">
+                <label for="scooter-id">Enter Scooter ID:</label>
+                <input type="text" id="scooter-id" placeholder="e.g., SCOO123">
+                <button onclick="trackScooter()">Track Scooter</button>
+            </div>
+            <div id="scooter-status">
+                <h2>Scooter Status</h2>
+                <p><strong>Scooter ID:</strong> <span id="current-scooter-id">N/A</span></p>
+                <p><strong>Current Stage:</strong> <span id="current-stage">N/A</span></p>
+            </div>
+            <div id="update-section">
+                <h2>Update Scooter Stage</h2>
+                <button onclick="updateStage('Manufacturer')">Manufacturer</button>
+                <button onclick="updateStage('BIKESETU Yard')">BIKESETU Yard</button>
+                <button onclick="updateStage('Franchisee Store')">Franchisee Store</button>
+                <button onclick="updateStage('Customer')">Customer</button>
+                <button onclick="updateStage('Ownership with Customer')">Ownership with Customer</button>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
