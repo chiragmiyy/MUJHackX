@@ -33,8 +33,3 @@ Originally designed for the **MUJHackX 2.0 Hackathon**, this project leverages m
 | Realtime DB    | Firebase Realtime Database          |
 | Auth & Hosting | Firebase (optional, future scope)   |
 | Future Upgrade | React + Tailwind CSS (planned)      |
-
----
-
-## 🌍 Architecture
-
